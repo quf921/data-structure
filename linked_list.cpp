@@ -9,7 +9,7 @@ LinkedList::LinkedList() {
 
 LinkedList::~LinkedList() {
     Node* currentNode;
-    while (head_ == nullptr) {
+    while (head_ != nullptr) {
         currentNode = head_;
         head_ = head_->next_;
 

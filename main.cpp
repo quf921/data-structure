@@ -8,7 +8,6 @@
 void print(LinkedList &list) { list.print(); }
 
 void testQueue() {
-  std::cout << "test queue\n";
   Queue queue;
 
   for (int i = 0; i < 10; i++)
@@ -27,7 +26,6 @@ void testQueue() {
 }
 
 void testStack() {
-  std::cout << "test stack\n";
   Stack stack;
 
   for (int i = 0; i < 10; i++)
@@ -43,14 +41,11 @@ void testStack() {
     std::cout << stack.pop() << std::endl;
   }
   print(stack);
-  std::cout << "test stack end\n";
 }
 
 void testList() {
-  std::cout << "test list\n";
   List list;
 
-  std::cout << "test list\n";
   for (int i = 0; i < 10; i++)
     list.insert(i, i);
 
@@ -59,8 +54,6 @@ void testList() {
 
 int main() {
   testQueue();
-  std::cout << "test func\n";
   testStack();
-  std::cout << "test func\n";
   testList();
 }
